@@ -23,7 +23,7 @@ page=st.sidebar.radio(
 )
 st.sidebar.markdown("---")
 st.sidebar.markdown("**Group: Glycemic Analytics**")
-st.sidebar.markdown("**Author: Hadia Awan")
+st.sidebar.markdown("**Author: Hadia Awan**")
 if page=="1. Overview & Dataset":
     from modules.overview import show
     show(df)
