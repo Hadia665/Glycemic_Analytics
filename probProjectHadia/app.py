@@ -1,4 +1,4 @@
-import streamlit as st
+import osimport streamlit as st
 from DataLoader import load_data
 st.set_page_config(
     page_title="Glycemic Analytics",
@@ -6,7 +6,8 @@ st.set_page_config(
     layout="wide"
 )
 df = load_data()
-st.sidebar.image("logo.jpeg", width=280)
+logoPath = os.path.join(os.path.dirname(__file__), "logo.jpeg")
+st.sidebar.image(logoPath, width=280)
 st.sidebar.markdown("**Diabetes Statistical Analysis**")
 st.sidebar.markdown("---")
 page=st.sidebar.radio(
