@@ -1,4 +1,5 @@
-import osimport streamlit as st
+import os
+import streamlit as st
 from DataLoader import load_data
 st.set_page_config(
     page_title="Glycemic Analytics",
